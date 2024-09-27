@@ -26,7 +26,7 @@
 
 ---
 
-# PostgreSQL  [PostgreSQL]
+# PostgreSQL
 
 
 
