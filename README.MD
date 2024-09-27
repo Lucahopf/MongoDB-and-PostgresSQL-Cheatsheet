@@ -25,7 +25,8 @@
   - [Lookup](#lookup)
 
 
-# PostgreSQL (#postgresql)
+# PostgreSQL
+
 
 
 
