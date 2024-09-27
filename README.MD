@@ -1,13 +1,12 @@
-`code` this is a blockqote
-
 # PostgreSQL / MongoDB Cheatsheet
 
-## Contents
+
+## Content
 
 - [PostgreSQL](#postgresql)
-  - [Erstellen des Customer Tables und Einfügen von Daten](#erstellen-des-customer-tables-und-einfügen-von-daten)
-  - [Erstellen des Product Tables und Einfügen von Daten](#erstellen-des-product-tables-und-einfügen-von-daten)
-  - [Erstellen des Verkaufsstellen Tables und Einfügen von Daten](#erstellen-des-verkaufsstellen-tables-und-einfügen-von-daten)
+  - [Erstellen des Customer Tables und Einfügen von Daten](#customer-table1)
+  - [Erstellen des Product Tables und Einfügen von Daten](#product-table1)
+  - [Erstellen des Verkaufsstellen Tables und Einfügen von Daten](#verkaufsstellen1)
   - [Create](#create)
   - [Insert](#insert)
   - [Select](#select)
@@ -15,14 +14,14 @@
   - [Delete](#delete)
   
 - [MongoDB](#mongodb)
-  - [Erstellen des Customer Tables](#erstellen-des-customer-tables)
-  - [Erstellen des Product Tables](#erstellen-des-product-tables)
-  - [Erstellen des Verkaufsstellen Tables](#erstellen-des-verkaufsstellen-tables)
-  - [Create](#create-1)
-  - [Insert](#insert-1)
-  - [Select](#select-1)
-  - [Update](#update-1)
-  - [Delete](#delete-1)
+  - [Erstellen des Customer Tables](#customer-table2)
+  - [Erstellen des Product Tables](#product-table2)
+  - [Erstellen des Verkaufsstellen Tables](#verkaufsstellen-table2)
+  - [Create](#create-2)
+  - [Insert](#insert-2)
+  - [Select](#select-2)
+  - [Update](#update-2)
+  - [Delete](#delete-2)
   - [Lookup](#lookup)
 
 
