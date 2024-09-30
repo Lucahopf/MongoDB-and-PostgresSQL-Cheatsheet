@@ -32,32 +32,33 @@
 
 ## Creating the Tables
 
-### Creating The Customer Table and Adding Data
+**Creating The Customer Table and Adding Data**
 
 ```
-
-CREATE TABLE Verkaufsstellen (
-    id SERIAL PRIMARY KEY,
-    store_name VARCHAR(255),
+CREATE TABLE customers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    email VARCHAR(255),
+    age INT,
     street VARCHAR(255),
     city VARCHAR(255),
-    zip_code VARCHAR(10),
-    country VARCHAR(255),
-    phone VARCHAR(20),
-    email VARCHAR(255),
-    monday VARCHAR(50),
-    tuesday VARCHAR(50),
-    wednesday VARCHAR(50),
-    thursday VARCHAR(50),
-    friday VARCHAR(50),
-    saturday VARCHAR(50),
-    sunday VARCHAR(50),
-    available_products TEXT[]
+    zip_code VARCHAR(20)
+    product_id INT,
+    order date VARCHAR(255),
+    amount INT
 );
-
-
 ```
 
+**Adding Data to The Customers  Table**
+
+```
+INSERT INTO customers (name, email, age, street, city, zip_code, product_id, order_date, amount) VALUES
+('Max Mustermann', 'max.mustermann@example.com', 35, 'Musterstraße 1', 'Musterstadt', '12345', '60f8f6c5e3b5a12d4c76f4a8', '2024-09-01', 2),
+('Max Mustermann', 'max.mustermann@example.com', 35, 'Musterstraße 1', 'Musterstadt', '12345', '60f8f6c5e3b5a12d4c76f4b3', '2024-09-10', 1),
+('Anna Beispiel', 'anna.beispiel@example.com', 28, 'Beispielweg 3', 'Beispielstadt', '54321', '60f8f6c5e3b5a12d4c76f4c2', '2024-08-15', 1),
+('John Doe', 'john.doe@example.com', 42, 'Doe Lane 5', 'Doe City', '67890', '60f8f6c5e3b5a12d4c76f4a8', '2024-07-21', 3),
+('John Doe', 'john.doe@example.com', 42, 'Doe Lane 5', 'Doe City', '67890', '60f8f6c5e3b5a12d4c76f4d7', '2024-07-30', 1); 
+```
 
 
 Credits:  Valentin H. 
