@@ -161,7 +161,8 @@ INSERT INTO customers (name, email, age, street, city, zip_code) VALUES
 ('Anna Beispiel', 'anna.beispiel@example.com', 28, 'Beispielweg 3', 'Beispielstadt', '54321'),
 ('John Doe', 'john.doe@example.com', 42, 'Doe Lane 5', 'Doe City', '67890');
 
-Select
+
+##  Select Commands
 
 Select:
 `SELECT * FROM Verkaufsstellen`
@@ -169,7 +170,7 @@ Select:
 Ergebnis:
  
 
-Befehl:
+Command:
 
 ```
 SELECT id,
@@ -181,16 +182,21 @@ FROM Verkaufsstellen
 Ergebnis:
  
 
-Befehl:
+Command:
+
+```
 SELECT *FROM verkaufsstellen
 WHERE city= ‘Berlin’
+```
 Ergebnis:
  
 
 
-Befehl:
+Command:
+```
 SELECT store_name, street, city FROM verkaufsstellen
 WHERE city = 'Berlin'
+```
 
 Ergebnis:
  
