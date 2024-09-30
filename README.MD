@@ -15,15 +15,15 @@
   - [Deleting Data in SQL Databases](#delete)
   
 - [MongoDB](#mongodb)
-  - [Erstellen des Customer Tables](#customer-table2)
-  - [Erstellen des Product Tables](#product-table2)
-  - [Erstellen des Verkaufsstellen Tables](#verkaufsstellen-table2)
-  - [Create](#create-2)
+  - [Creating Tables]  (#creating-tables2)
+  - [Creating the customer table](#customer-table2)
+  - [Creating the product table](#product-table2)
+  - [Creating the Shop Location table](#verkaufsstellen-table2)
   - [Insert](#insert-2)
-  - [Select](#select-2)
-  - [Update](#update-2)
-  - [Delete](#delete-2)
-  - [Lookup](#lookup)
+  - [Select Commands](#select-2)
+  - [Updating data in MongoDB](#update-2)
+  - [Deleting MongoDB Data ](#delete-2)
+  - [MongoDB Lookups](#lookup)
 
 ---
 
@@ -329,9 +329,12 @@ Output:
 DELETE FROM verfügbare_produkte
 WHERE produkt_name = 'Smartwatch' AND verkaufsstelle_id = 1;
 
-
+---
  
-MongoDB
+# MongoDB
+
+
+
 Erstellen des Customer Tables
 db.customers.insertMany([
 { name:"MaxMustermann",email:"max.mustermann@example.com",
