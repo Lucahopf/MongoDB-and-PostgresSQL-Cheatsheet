@@ -1,5 +1,6 @@
 # PostgreSQL / MongoDB Cheatsheet
 
+> *this document was created as part of a student project if it is incomplete, please excuse us*
 
 ## Content
 
