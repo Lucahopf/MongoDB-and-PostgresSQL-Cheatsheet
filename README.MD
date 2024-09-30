@@ -153,13 +153,7 @@ INSERT INTO Verkaufsstellen (store_name, street, city, zip_code, country, phone,
 To Show You How a database is going to look like We Use Here 
 
 Result:
- 
 
-Insert
-INSERT INTO customers (name, email, age, street, city, zip_code) VALUES
-('Max Mustermann', 'max.mustermann@example.com', 35, 'Musterstraße 1', 'Musterstadt', '12345'),
-('Anna Beispiel', 'anna.beispiel@example.com', 28, 'Beispielweg 3', 'Beispielstadt', '54321'),
-('John Doe', 'john.doe@example.com', 42, 'Doe Lane 5', 'Doe City', '67890');
 
 
 ##  Select Commands
@@ -202,35 +196,40 @@ Ergebnis:
  
 
 Befehl:
+```
 SELECT * FROM verkaufsstellen
 WHERE city != 'Berlin'
-
+```
 Ergebnis:
  
 
 Befehl:
+```
 SELECT * FROM verkaufsstellen
 WHERE city = 'Berlin' AND zip_code = '10178'
-
+```
 Ergebnis:
  
 
 Befehl:
+```
 SELECT * FROM Verkaufsstellen
 WHERE city = 'Berlin' OR city = 'München'
-
+```
 Ergebnis:
  
 
  
 Befehl:
-SELECT * FROM Verkaufsstellen WHERE id > 1
+
+`SELECT * FROM Verkaufsstellen WHERE id > 1`
 
 Ergebnis:
  
 
 Befehl:
-SELECT * FROM Verkaufsstellen WHERE id < 2
+
+`SELECT * FROM Verkaufsstellen WHERE id < 2`
 
 Ergebnis:
  
