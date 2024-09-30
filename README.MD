@@ -150,7 +150,7 @@ INSERT INTO Verkaufsstellen (store_name, street, city, zip_code, country, phone,
 ('Store Hamburg Altona', 'Große Bergstraße 15', 'Hamburg', '22767', 'Deutschland', '+49 40 7654321', 'hamburg-altona@company.com', '09:00 - 18:00', '09:00 - 18:00', '09:00 - 18:00', '09:00 - 18:00', '09:00 - 20:00', '10:00 - 18:00', 'Geschlossen', ARRAY['TV', 'T-Shirt', 'Staubsaugerroboter'])
 ```
 
-To Show You How a database is going to look like We Use Here 
+> To Show You How a database is going to look like, We Use Here Screenshots Of The Query tool of PgAdmin 4.0
 
 Result:
 
@@ -221,7 +221,6 @@ Ergebnis:
 
  
 Befehl:
-
 `SELECT * FROM Verkaufsstellen WHERE id > 1`
 
 Ergebnis:
@@ -235,93 +234,97 @@ Ergebnis:
  
 
 Befehl:
-SELECT * FROM Verkaufsstellen WHERE id < 4 AND id > 2
+`SELECT * FROM Verkaufsstellen WHERE id < 4 AND id > 2`
 
 Ergebnis:
  
 
 Befehl:
-SELECT * FROM Verkaufsstellen WHERE city like '%burg%'
+`SELECT * FROM Verkaufsstellen WHERE city like '%burg%'`
 
 Ergebnis:
  
 
  
 Befehl:
-SELECT * FROM Verkaufsstellen WHERE zip_code like '22%'
+`SELECT * FROM Verkaufsstellen WHERE zip_code like '22%'?
 
 Ergebnis:
  
 
 Befehl:
+```
 SELECT * FROM customers
 WHERE email LIKE '%example.com%' ORDER BY age ASC
-
+```
 Ergebnis:
  
 
 Befehl:
+```
 SELECT * FROM customers
 WHERE email LIKE '%example.com%' ORDER BY age DESC
+```
+Ergebnis:
+ 
+
+Befehl:
+`SELECT COUNT(*) FROM customers`
 
 Ergebnis:
  
 
 Befehl:
-SELECT COUNT(*) FROM customers
+`SELECT COUNT (age) FROM customers`
 
 Ergebnis:
  
 
 Befehl:
-SELECT COUNT (age) FROM customers
+`SELECT COUNT(*) FROM customers WHERE age > 30`
 
 Ergebnis:
  
 
 Befehl:
-SELECT COUNT(*) FROM customers WHERE age > 30
-
-Ergebnis:
- 
-
-Befehl:
-SELECT DISTINCT(age) FROM customers
+`SELECT DISTINCT(age) FROM customers`
 
 Ergebnis:
  
 
  
 Befehl:
-SELECT * FROM customers LIMIT 1
+`SELECT * FROM customers LIMIT 1`
 
 Ergebnis:
  
 
 Befehl:
-SELECT * FROM customers LIMIT 2 OFFSET 2;
+`SELECT * FROM customers LIMIT 2 OFFSET 2;`
 
 Ergebnis:
  
 
 Befehl:
-EXPLAIN SELECT * FROM customers WHERE age = '28'
+`EXPLAIN SELECT * FROM customers WHERE age = '28'`
 
 Ergebnis:
  
 
 
  
-Update
+## Updating Data in Queries
+
+```
 UPDATE verkaufsstellen
 SET montag = 'Geschlossen', dienstag = 'Geschlossen', mittwoch = 'Geschlossen'
 WHERE name = 'Store Hamburg Altona';
-
+```
  
 Output: 
  
 
-Delete
+## Deleting Data in SQL Databases
 
 DELETE FROM verfügbare_produkte
 WHERE produkt_name = 'Smartwatch' AND verkaufsstelle_id = 1;
